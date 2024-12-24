@@ -1,5 +1,5 @@
 
-text = 'text'
+text = input('Enter txt path: ')
 
 with open(text) as file_object:
     lines = file_object.readlines()
@@ -26,7 +26,7 @@ print(f'Number of words: {len(aux)}')
 if num_search > 0:
     print(f'The word {search} appears {int(num_search / 2)} times')
 else:
-    print('word not founded')
+    print(f'word {search} not founded')
 
 
 
